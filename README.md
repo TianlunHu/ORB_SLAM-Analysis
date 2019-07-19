@@ -1,6 +1,6 @@
 # ORB_SLAM-Analysis
 
-####This repository consists of several method to analysis or improvment of ORB_SLAM Algorithm.
+#### This repository consists of several method to analysis or improvment of ORB_SLAM Algorithm.
 
 ## Sequence_capture :
 
@@ -15,8 +15,11 @@ Since ORB_SLAM cam't determine the real world-frame and orintation, this is a wa
 The real world frame could be recoverd if there are enough 3D points' coordinates on the objects that stand vertical or parallel to the ground. \
 
 In this case, straight lines in every frame of ORB_SLAM could be detected with improved-Hough-Line-Detector. 'improved' means only the key points in frames are taken in count, and also some keypoints near to the line. \
+
 ![Hough]()
+
 With corespended 3D-mappoints, SVD could be applied to solve the direction that most points indicate. And this could be regard as an estimation od the World-Basis.
+
 ![World-Basis]()
 
 ## Trajectory :
@@ -24,5 +27,6 @@ With corespended 3D-mappoints, SVD could be applied to solve the direction that 
 This implements a methode to recover the 3D motion trajectory from ORB_SLAM DATA i.e Position Vector, Quaternion or Camera matrix. \
 
 ###### !!! The trajectory and orientation are not ground truth !!!
+
 ![traj from Pos-Quater]()
 ![traj from matrix]()
