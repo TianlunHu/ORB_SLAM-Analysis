@@ -20,7 +20,7 @@ In this case, straight lines in every frame of ORB_SLAM could be detected with i
 
 With corespended 3D-mappoints, SVD could be applied to solve the direction that most points indicate. And this could be regard as an estimation od the World-Basis. (The accuracy of this method also depend on how many othogonal lines are detected )
 
-![World-Basis](img/Trajectory 150.png)
+![WorldBasis](img/Trajectory 150.png)
 
 ## Trajectory :
 
