@@ -16,7 +16,7 @@ The real world frame could be recoverd if there are enough 3D points' coordinate
 
 In this case, straight lines in every frame of ORB_SLAM could be detected with improved-Hough-Line-Detector. 'improved' means only the key points in frames are taken in count, and also some keypoints near to the line. \
 
-![Hough]()
+![Hough](img/hough.png)
 
 With corespended 3D-mappoints, SVD could be applied to solve the direction that most points indicate. And this could be regard as an estimation od the World-Basis.
 
