@@ -12,15 +12,15 @@ The Sequences will be saved to the files that ORB_SLAM can directly run, with a 
 
 Since ORB_SLAM cam't determine the real world-frame and orintation, this is a way to estimate the world-basis from the ORB_SLAM Data(which could e saved with https://github.com/TianlunHu/My-ORB-SLAM ). \
 
-The real world frame could be recoverd if there are enough 3D points' coordinates on the objects that stand vertical or parallel to the ground. \
+The real world frame could be recoverd if there are enough 3D points' coordinates on the objects that stand vertical or horizontal to the ground. \
 
 In this case, straight lines in every frame of ORB_SLAM could be detected with improved-Hough-Line-Detector. 'improved' means only the key points in frames are taken in count, and also some keypoints near to the line. \
 
 ![Hough](img/hough.png)
 
-With corespended 3D-mappoints, SVD could be applied to solve the direction that most points indicate. And this could be regard as an estimation od the World-Basis.
+With corespended 3D-mappoints, SVD could be applied to solve the direction that most points indicate. And this could be regard as an estimation od the World-Basis. (The accuracy of this method also depend on how many othogonal lines are detected )
 
-![World-Basis]()
+![World-Basis](img/Trajectory 150.png)
 
 ## Trajectory :
 
